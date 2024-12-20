@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rachai</string>
+
+    <string-array name="cursos">
+        <item>GE</item>
+        <item>GPI</item>
+        <item>CD</item>
+        <item>DSM</item>
+        <item>CE</item>
+        <item>DP</item>
+    </string-array>
+</resources>

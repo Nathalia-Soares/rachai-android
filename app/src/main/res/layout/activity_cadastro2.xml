@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_rachai_login"
+        android:layout_width="142dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rachai2" />
+
+    <ImageView
+        android:id="@+id/imageView_fatec_login"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fatec2" />
+
+    <Button
+        android:id="@+id/btn_voltar_login"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="100dp"
+        android:background="#255362"
+        android:text="Voltar"
+        app:backgroundTint="@null"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCor_cadastro2" />
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="#CF080F"
+        android:text="Continuar"
+        app:backgroundTint="@null"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_voltar_login" />
+
+    <Button
+        android:id="@+id/btn_carona_cadastro2"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="50dp"
+        android:background="#CF080F"
+        android:text="Carona"
+        app:backgroundTint="@null"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_motorista_cadastro2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_rachai_login" />
+
+    <Button
+        android:id="@+id/btn_motorista_cadastro2"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="45dp"
+        android:background="#255362"
+        android:text="Motorista"
+        app:backgroundTint="@null"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_rachai_login" />
+
+    <EditText
+        android:id="@+id/editTextModelo_cadastro2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Modelo do Veículo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_carona_cadastro2" />
+
+    <EditText
+        android:id="@+id/editTextPlaca_cadastro2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Placa do Veículo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModelo_cadastro2" />
+
+    <EditText
+        android:id="@+id/editTextCor_cadastro2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Cor do Veículo"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlaca_cadastro2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

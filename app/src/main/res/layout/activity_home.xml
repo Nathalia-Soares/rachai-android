@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4D4D"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_rachai_login"
+        android:layout_width="142dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rachai2" />
+
+    <ImageView
+        android:id="@+id/imageView_fatec_login"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fatec2" />
+
+    <TextView
+        android:id="@+id/greetings_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:text="Olá, usuário!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_rachai_login" />
+
+    <Button
+        android:id="@+id/btn_logout_home"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:background="#255362"
+        android:text="Logout"
+        app:backgroundTint="@null"
+        app:cornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaMotoristas_home" />
+
+    <LinearLayout
+        android:id="@+id/listaMotoristas_home"
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings_home"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
